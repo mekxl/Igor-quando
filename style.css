@@ -1,107 +1,38 @@
-Pelo github, eu quero programar um site imbecil, a unica coisa que ele faz é ter um botão escrito "Aperte para imitar o Igor" e então ele vai reproduzir um som de peido
-BLACKBOXAI
-|
-|
-
-Para criar um site simples que reproduza um som de peido quando um botão é clicado, você pode usar HTML, CSS e JavaScript. Vou te dar um exemplo básico de como fazer isso.
-Passo 1: Estrutura do Projeto
-
-Crie uma pasta para o seu projeto e dentro dela crie os seguintes arquivos:
-
-    index.html
-    style.css
-    script.js
-    Um arquivo de áudio chamado peido.mp3 (ou qualquer outro formato de áudio que você preferir).
-
-Passo 2: Código HTML (index.html)
-
-html
-
-<!DOCTYPE html>
-
-<html lang="pt-BR">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-
-    <title>Imitar o Igor</title>
-
-</head>
-
-<body>
-
-    <div class="container">
-
-        <h1>Aperte para imitar o Igor</h1>
-
-        <button id="imitateButton">Aperte aqui!</button>
-
-        <audio id="sound" src="peido.mp3"></audio>
-
-    </div>
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
-
-Passo 3: Estilo CSS (style.css)
-
-css
-
 body {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     height: 100vh;
-
-    background-color: #f0f0f0;
-
+    background-color: #ffeb3b; /* Cor amarela tipo meme */
     font-family: Arial, sans-serif;
-
+    text-align: center;
 }
-
 
 .container {
-
-    text-align: center;
-
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
 button {
-
-    padding: 10px 20px;
-
-    font-size: 20px;
-
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: bold;
     cursor: pointer;
-
     border: none;
-
-    border-radius: 5px;
-
-    background-color: #4CAF50;
-
+    border-radius: 8px;
+    background-color: #d32f2f;
     color: white;
-
-    transition: background-color 0.3s;
-
+    transition: 0.2s;
 }
 
-
 button:hover {
-
-    background-color: #45a049;
-
+    background-color: #b71c1c;
+    transform: scale(1.1);
 }
